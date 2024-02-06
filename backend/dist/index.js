@@ -30,6 +30,7 @@ app.post("/weatherGet", async (req, res) => {
     catch (err) {
         res.status(200).json({
             error: true,
+            msg: err,
             message: "Something Went Wrong"
         });
         console.error(err);

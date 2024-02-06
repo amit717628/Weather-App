@@ -8,7 +8,7 @@ export default function Hero() {
   
   const fetchApi = async () => {
     try {
-      const url = 'https://amit717628-fantastic-rotary-phone-6w6gx9v79552475x-3000.preview.app.github.dev/weatherGet';
+      const url = 'https://backendapiweather.onrender.com/weatherGet';
       const response = await fetch(url, {
         method: 'POST',
         body: JSON.stringify({ data: [city] }),
